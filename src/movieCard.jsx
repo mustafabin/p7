@@ -2,7 +2,7 @@ import React from "react";
 import { Rating } from "@mui/material/";
 
 const Card = (props) => {
-  let { moive } = props;
+  let { movie } = props;
   return (
     <div className="card">
       <div
@@ -11,27 +11,27 @@ const Card = (props) => {
         }}
         className="title"
       >
-        <p className="title-name">{moive.Title}</p>
+        <p className="title-name">{movie.Title}</p>
       </div>
-      <a target="_blank" href={moive.URL}>
+      <a target="_blank" href={movie.URL}>
         IMDb Link
       </a>
       <div className="info">
         <p>
           <span>Director : </span>
-          {moive.Director}
+          {movie.Director}
         </p>
         <p>
           <span>Run Time : </span>
-          {moive.Runtime_mins}
+          {movie.Runtime_mins}
         </p>
         <p>
           <span>Year : </span>
-          {moive.Year}
+          {movie.Year}
         </p>
 
         <p>
-          <span>Genres</span> {moive.Genres}
+          <span>Genres</span> {movie.Genres}
         </p>
         <div className="rating">
           <p>
@@ -40,7 +40,7 @@ const Card = (props) => {
         </div>
       </div>
       <Rating
-        value={moive.IMDb_Rating / 2}
+        value={movie.IMDb_Rating / 2}
         max={5}
         precision={0.1}
         size="large"
