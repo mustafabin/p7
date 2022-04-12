@@ -17,14 +17,16 @@ function App() {
       "https://top100-superhero-movie-api.herokuapp.com/api/movies"
     );
 
-    await setMovies(res.data);
+    setMovies(res.data);
     console.log(movies);
-    updateRandom();
   };
 
   useEffect(() => {
     getmovies();
   }, []);
+  useEffect(() => {
+    updateRandom();
+  }, [movies]);
 
   let updateRandom = () => {
     let random = Math.random() * (90 - 0) + 0;
