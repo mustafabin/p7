@@ -66,7 +66,7 @@
 .right {
   align-self: flex-end;
 }
-p span {
+.info span {
   color: purple;
 }
 a {
@@ -83,6 +83,8 @@ a:hover {
   font-size: larger;
 }
 .info {
+  max-width: 200px;
+
   margin-top: 30px;
   display: flex;
   flex-direction: column;

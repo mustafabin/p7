@@ -17,10 +17,8 @@ const Card = (props) => {
         IMDb Link
       </a>
       <div className="info">
-        <p>
-          <span>Director : </span>
-          {movie.Director}
-        </p>
+        <span>Director : </span>
+        <p>{movie.Director}</p>
         <p>
           <span>Run Time : </span>
           {movie.Runtime_mins}
@@ -30,9 +28,8 @@ const Card = (props) => {
           {movie.Year}
         </p>
 
-        <p>
-          <span>Genres</span> {movie.Genres}
-        </p>
+        <span>Genres</span>
+        <p>{movie.Genres}</p>
         <div className="rating">
           <p>
             <span>Rating : </span>
